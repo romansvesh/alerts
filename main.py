@@ -19,7 +19,7 @@ class TestLogin(unittest.TestCase):
         helper.select_input_alert_menu_and_go_to_its_frame(self.driver)
         helper.click_the_button(self.driver)
         helper.send_text_to_alert_and_accept_it(self.driver)
-        self.assertRegex(helper.get_text_under_button(self.driver), SOME_TEXT)git init
+        self.assertRegex(helper.get_text_under_button(self.driver), SOME_TEXT)
 
     def tearDown(self):
         self.driver.close()
