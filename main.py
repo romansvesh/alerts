@@ -13,7 +13,7 @@ class TestLogin(unittest.TestCase):
         self.driver.maximize_window()
         helper.login(self.driver)
 
-    def test_clipboard_copy_by_button(self):
+    def test_alert(self):
         self.driver.get(
             "http://way2automation.com/way2auto_jquery/alert.php")
         helper.select_input_alert_menu_and_go_to_its_frame(self.driver)
